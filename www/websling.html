@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=3, user-scalable=yes"/>
+        <title>Riggers </title>
+		<link rel="stylesheet" href="css/themes/rigger.css" />
+ 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<style>
+			table { width:100%; }
+			table caption { text-align:center;  }
+			table thead th { text-align:center; border-bottom-width:1px; border-top-width:1px; }
+			table th, td { text-align:center; padding:6px;} 
+			tr.d0  {background-color: #CC9999;}
+		</style>
+    </head>
+    <body>
+
+	<!-- Wire -->		
+        <div data-role="page" data-theme="a" id="ply1">
+		
+		
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Rigger
+                </h1>
+				
+			
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#ply1" data-role="tab" class="ui-btn-active">1 Ply</a></li>
+						<li><a href="#ply2" data-role="tab" >2 Ply</a></li>
+						<li><a href="#ply3" data-role="tab">3 Ply</a></li>
+						<li><a href="#ply4" data-role="tab">4 Ply</a></li>
+					</ul>
+				</div><!-- /navbar -->	
+            </div>
+
+			
+            <div data-role="content" style="padding: 6px">
+					<table summary="This table lists all the JetBlue flights.">
+		  <caption>1 ply Eye Web Sling Capacity.</caption>
+		  <thead>
+		    <tr>
+		      <th scope="col">Width</th>    
+		      <th scope="col">Vertical</th>
+			  <th scope="col">Choker</th>
+			  <th scope="col">Basket</th>
+
+		    </tr>
+		  </thead>
+
+		  <tbody>
+		  <tr class="d0">
+		    <th scope="row">1</th>
+		    <td>1,600</td>
+			<td>1,250</td> 
+			<td>3,200</td>
+		  </tr>
+		  <tr>
+		    <th scope="row">2</th>
+		    <td>3,200</td>
+			<td>2,560</td>
+			<td>6,400</td>
+		  </tr>
+		  <tr class="d0">
+		    <th scope="row">3</th>
+		    <td>4,800</td>
+			<td>3,840</td>
+			<td>9,600</td>
+		  </tr>
+		  <tr>
+		    <th scope="row">4</th>
+		    <td>6,400</td>
+		    <td>5,120</td>
+			<td>12,800</td>
+		  </tr>
+		  <tr class="d0">
+		    <th scope="row">6</th>
+		    <td>9,600</td>
+		    <td>7,680</td>
+			<td>19,200</td>
+		  </tr>
+		  <tr>
+		    <th scope="row">8</th>
+		    <td>12,800</td>
+		    <td>10,240</td>
+			<td>25,600</td>
+		  </tr>
+		  <tr class="d0">
+		    <th scope="row">10</th>
+		    <td>16,000</td>
+		    <td>12,800</td>
+			<td>32,000</td>
+		  </tr>
+		  <tr>
+		    <th scope="row">12</th>
+		    <td>19,200</td>
+		    <td>15,360</td>
+			<td>38,400</td>
+		  </tr>
+		  </tbody>
+		</table>
+			
+            </div>
+			
+					<div data-role="footer"  data-position="fixed">		
+						<div data-role="navbar" data-iconpos="top">
+							<ul>
+								<li><a href="index.html" data-icon="home" rel="external" >Home</a></li>
+								<li><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="plus" >Calculator</a></li>
+								<li><a href="#popupChart" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="grid" >Charts</a></li>
+								<li><a href="#popupHardware" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="gear" >Hardware</a></li>
+							</ul>
+							
+						</div><!-- /navbar -->
+					</div><!-- /footer -->						
+					<div data-role="popup" id="popupMenu" data-theme="a">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+							<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+								<li data-role="divider" data-theme="a">Calculators</li>
+								<li><a href="weight.html" rel="external">Weight</a></li>
+								<li><a href="bridle.html" rel="external">Bridle</a></li>
+								<li><a href="asym.html" rel="external">Asym Bridle</a></li>
+								<li><a href="slingangle.html" rel="external">Sling Angle</a></li>
+								<li><a href="choker.html" rel="external">Choker</a></li>
+								<li><a href="doublechoke.html" rel="external">Double Choker</a></li>
+							</ul>
+					</div>
+					<div data-role="popup" id="popupChart" data-theme="a" >
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+							<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+								<li data-role="divider"  data-theme="a">Charts</li>
+								<li><a href="wire.html">Wire Rope</a></li>
+								<li><a href="chain.html">Chain</a></li>
+								<li><a href="websling.html">Web Slings</a></li>
+							</ul>
+					</div>
+					<div data-role="popup" id="popupHardware" data-theme="a" >
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+							<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+								<li data-role="divider"  data-theme="a">Hardware</li>
+								<li><a href="shackles.html">Shackles</a></li>
+								<li><a href="eyebolt.html">Eye Bolts</a></li>
+							</ul>
+					</div>					
+
+			
+        </div>
+	
+
+
+        <div data-role="page" data-theme="a" id="ply2">
+		
+		
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Rigger
+                </h1>
+				
+			
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#ply1" >1 Ply</a></li>
+						<li><a href="#ply2" class="ui-btn-active">2 Ply</a></li>
+						<li><a href="#ply3">3 Ply</a></li>
+						<li><a href="#ply4">4 Ply</a></li>
+					</ul>
+				</div><!-- /navbar -->	
+            </div>
+
+			
+            <div data-role="content" style="padding: 6px">
+					<table summary="This table lists all the JetBlue flights.">
+					<caption>2 Ply Eye Web Sling Capacity.</caption>
+					  <thead>
+						<tr>
+						  <th scope="col">Width</th>    
+						  <th scope="col">Vertical</th>
+						  <th scope="col">Choker</th>
+						  <th scope="col">Basket</th>
+
+						</tr>
+					  </thead>
+
+
+					  <tbody>
+					  <tr class="d0">
+						<th scope="row">1</th>
+						<td>3,200</td>
+						<td>2,560</td> 
+						<td>6,400</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>6,400</td>
+						<td>5,120</td>
+						<td>12,800</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">3</th>
+						<td>9,300</td>
+						<td>7,440</td>
+						<td>18,600</td>
+					  </tr>
+					  <tr>
+						<th scope="row">4</th>
+						<td>11,500</td>
+						<td>9,200</td>
+						<td>23,000</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">6</th>
+						<td>16,500</td>
+						<td>13,200</td>
+						<td>33,000</td>
+					  </tr>
+					  <tr>
+						<th scope="row">8</th>
+						<td>22,750</td>
+						<td>18,200</td>
+						<td>44,500</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">10</th>
+						<td>28,400</td>
+						<td>22,720</td>
+						<td>56,800</td>
+					  </tr>
+					  <tr>
+						<th scope="row">12</th>
+						<td>34,100</td>
+						<td>27,280</td>
+						<td>68,200</td>
+					  </tr>
+					  </tbody>
+					</table>
+						
+            </div>
+			
+        </div>
+
+        <div data-role="page" data-theme="a" id="ply3">
+		
+		
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Rigger
+                </h1>
+				
+			
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#ply1" >1 Ply</a></li>
+						<li><a href="#ply2" >2 Ply</a></li>
+						<li><a href="#ply3" class="ui-btn-active">3 Ply</a></li>
+						<li><a href="#ply4" >4 Ply</a></li>
+					</ul>
+				</div><!-- /navbar -->	
+            </div>
+
+			
+            <div data-role="content" style="padding: 6px">
+					<table summary="This table lists all the JetBlue flights.">
+					<caption>3 Ply Eye Web Sling Capacity.</caption>
+					  <thead>
+						<tr>
+						  <th scope="col">Width</th>    
+						  <th scope="col">Vertical</th>
+						  <th scope="col">Choker</th>
+						  <th scope="col">Basket</th>
+
+						</tr>
+					  </thead>
+					  <tbody>
+					  <tr class="d0">
+						<th scope="row">1</th>
+						<td>4,100</td>
+						<td>3,280</td> 
+						<td>8,200</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>8,300</td>
+						<td>6,440</td>
+						<td>16,600</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">3</th>
+						<td>12,500</td>
+						<td>10,000</td>
+						<td>25,000</td>
+					  </tr>
+					  <tr>
+						<th scope="row">4</th>
+						<td>16,000</td>
+						<td>12,800</td>
+						<td>32,000</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">6</th>
+						<td>23,000</td>
+						<td>18,400</td>
+						<td>46,000</td>
+					  </tr>
+					  <tr>
+						<th scope="row">8</th>
+						<td>30,700</td>
+						<td>24,560</td>
+						<td>61,400</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">10</th>
+						<td>36,800</td>
+						<td>29,440</td>
+						<td>73,600</td>
+					  </tr>
+					  <tr>
+						<th scope="row">12</th>
+						<td>44,000</td>
+						<td>35,200</td>
+						<td>88,000</td>
+					  </tr>
+					  </tbody>
+					</table>
+						
+            </div>
+			
+        </div>
+
+        <div data-role="page" data-theme="a" id="ply4">
+		
+		
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Rigger
+                </h1>
+				
+			
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#ply1">1 Ply</a></li>
+						<li><a href="#ply2">2 Ply</a></li>
+						<li><a href="#ply3">3 Ply</a></li>
+						<li><a href="#ply4" class="ui-btn-active">4 Ply</a></li>
+					</ul>
+				</div><!-- /navbar -->	
+            </div>
+
+			
+            <div data-role="content" style="padding: 6px">
+					<table summary="This table lists all the JetBlue flights.">
+					<caption>4 Ply Eye Web Sling Capacity.</caption>
+					  <thead>
+						<tr>
+						  <th scope="col">Width</th>    
+						  <th scope="col">Vertical</th>
+						  <th scope="col">Choker</th>
+						  <th scope="col">Basket</th>
+
+						</tr>
+					  </thead>
+					  <tbody>
+					  <tr class="d0">
+						<th scope="row">1</th>
+						<td>6,200</td>
+						<td>4,960</td> 
+						<td>12,400</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>12,400</td>
+						<td>9,920</td>
+						<td>24,800</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">3</th>
+						<td>17,000</td>
+						<td>13,600</td>
+						<td>34,000</td>
+					  </tr>
+					  <tr>
+						<th scope="row">4</th>
+						<td>22,000</td>
+						<td>17,600</td>
+						<td>44,000</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">6</th>
+						<td>33,000</td>
+						<td>26,400</td>
+						<td>66,000</td>
+					  </tr>
+					  <tr>
+						<th scope="row">8</th>
+						<td>44,000</td>
+						<td>35,200</td>
+						<td>88,000</td>
+					  </tr>
+					  <tr class="d0">
+						<th scope="row">10</th>
+						<td>55,000</td>
+						<td>44,000</td>
+						<td>11,000</td>
+					  </tr>
+					  <tr>
+						<th scope="row">12</th>
+						<td>66,000</td>
+						<td>52,800</td>
+						<td>132,000</td>
+					  </tr>
+					  </tbody>
+					</table>
+						
+            </div>
+			
+        </div>			
+
+		<script type="text/javascript">
+				$("a[data-role=tab]").each(function () {
+					var anchor = $(this);
+					anchor.bind("click", function () {
+						$.mobile.changePage(anchor.attr("href"), {
+							transition: "none",
+							changeHash: false
+						});
+						return false;
+					});
+				});
+
+				$("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
+					$.mobile.silentScroll(0);
+					$.mobile.changePage.defaults.transition = 'slide';
+				});
+					
+
+		</script>			
+			
+        </div>
+	
+		<script src="phonegap.js"></script>
+		
+    </body>
+</html>
