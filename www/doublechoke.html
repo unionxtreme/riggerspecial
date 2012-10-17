@@ -21,14 +21,23 @@
 			table th, td { text-align:center; padding:6px;} 
 		</style>
 		
-					<div data-theme="a" data-role="header">
-						<h1>
-							Double Choker
-						</h1>
-					</div>
+            <div data-theme="a" data-role="header">
+				<a href="index.html" data-role="button" data-icon="home" data-iconpos="right">Home</a> 
+                <h1>
+                  Double Choker
+                </h1>
+				 
+            </div>
 		
 			
 						<div data-role="content" style="padding: 6px">
+						
+			<div data-role="popup" id="popupChoker" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images/choker1.jpg" alt="asym bridle">
+			</div>
+			<div data-role="popup" id="popupChoker2" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images/choker2.jpg" alt="asym bridle">
+			</div>
 							<form id="weight">
 							
 				<table>
@@ -46,7 +55,7 @@
 					<table>					
 					  <thead>
 						<tr>						
-							<th scope="col">B (in)</th>
+							<th scope="col">B (in) 	<a href="#popupChoker" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="info" data-iconpos="notext" ></a> </th>
 							<th scope="col">A (in)</th>  
 						</tr>
 					  </thead>
@@ -56,11 +65,11 @@
 						<td><input id="a" placeholder=""  onkeyUp="calculate();" name="a" value="7" type="number" step="0" min="0"/></td>
 					  </tr>
 					  <tr>
-							<td>Length (ft)</td>
+							<td>Length (ft) <a href="#popupChoker2" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="info" data-iconpos="notext" ></a></td>
 							<td>Height (ft)</td> 
 					  </tr>
 					  					  <tr>						
-						<td><input id="l" placeholder=""  onkeyUp="calculate();" name="h" value="8" type="number" step="0" min="0"/></td>
+						<td><input id="l" placeholder=""  onkeyUp="calculate();" name="h" value="8" type="number" step="0" min="0"/> </td>
 						<td><input id="h" placeholder=""  onkeyUp="calculate();" name="l" value="5" type="number" step="0" min="0"/></td>
 					  </tr>
 					  </tbody>
@@ -104,17 +113,14 @@
 					
 
 					</script>
-				</form>	
-				
-			
-			
+				</form>										
 					<div data-role="footer"  data-position="fixed">		
 						<div data-role="navbar" data-iconpos="top">
-							<ul>
-								<li><a href="index.html" data-icon="home" rel="external" >Home</a></li>
+							<ul>								
 								<li><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="plus" >Calculator</a></li>
 								<li><a href="#popupChart" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="grid" >Charts</a></li>
 								<li><a href="#popupHardware" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="gear" >Hardware</a></li>
+								<li><a href="#popupMore" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="star" >More</a></li>
 							</ul>
 							
 						</div><!-- /navbar -->
@@ -140,7 +146,24 @@
 								<li><a href="websling.html">Web Slings</a></li>
 							</ul>
 					</div>
-				
+					<div data-role="popup" id="popupHardware" data-theme="a" >
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+							<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+								<li data-role="divider"  data-theme="a">Hardware</li>
+								<li><a href="shackles.html">Shackles</a></li>
+								<li><a href="eyebolt.html">Eye Bolts</a></li>
+							</ul>
+					</div>
+				<div data-role="popup" id="popupMore" data-theme="a" >
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+							<li data-role="divider"  data-theme="a">More</li>
+							<li><a href="http://unionxtreme.com">UnionXtreme</a></li>
+							<li><a href="http://unionxtreme.com">More Apps</a></li>
+							<li><a href="http://millwrights1102.com">Hire Pro</a></li>
+							<li><a href="http://millwrightstraining.com">Training</a></li>
+						</ul>
+				</div>						
 
 			
         </div>

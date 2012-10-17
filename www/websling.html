@@ -40,14 +40,23 @@
 
 			
             <div data-role="content" style="padding: 6px">
-					<table summary="This table lists all the JetBlue flights.">
+			<div data-role="popup" id="popupChoker" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images/choker.jpg" alt="asym bridle">
+			</div>
+			<div data-role="popup" id="popupVerticle" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images/verticle.jpg" alt="asym bridle">
+			</div>
+			
+			<div data-role="popup" id="popupBasket" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images/basket.jpg" alt="asym bridle">
+			</div>		<table summary="This table lists all the JetBlue flights.">
 		  <caption>1 ply Eye Web Sling Capacity.</caption>
 		  <thead>
 		    <tr>
 		      <th scope="col">Width</th>    
-		      <th scope="col">Vertical</th>
-			  <th scope="col">Choker</th>
-			  <th scope="col">Basket</th>
+		      <th scope="col"><a href="#popupVerticle" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="info" data-iconpos="notext"></a>Vertical</th>
+			  <th scope="col"><a href="#popupChoker" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="info" data-iconpos="notext"></a>Choker</th>
+			  <th scope="col"><a href="#popupBasket" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="info" data-iconpos="notext"></a>Basket</th>
 
 		    </tr>
 		  </thead>
@@ -108,11 +117,11 @@
 			
 					<div data-role="footer"  data-position="fixed">		
 						<div data-role="navbar" data-iconpos="top">
-							<ul>
-								<li><a href="index.html" data-icon="home" rel="external" >Home</a></li>
+							<ul>								
 								<li><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="plus" >Calculator</a></li>
 								<li><a href="#popupChart" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="grid" >Charts</a></li>
 								<li><a href="#popupHardware" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="gear" >Hardware</a></li>
+								<li><a href="#popupMore" data-rel="popup" data-role="button" data-inline="true"data-position-to="window" data-icon="star" >More</a></li>
 							</ul>
 							
 						</div><!-- /navbar -->
@@ -145,7 +154,17 @@
 								<li><a href="shackles.html">Shackles</a></li>
 								<li><a href="eyebolt.html">Eye Bolts</a></li>
 							</ul>
-					</div>					
+					</div>
+				<div data-role="popup" id="popupMore" data-theme="a" >
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+							<li data-role="divider"  data-theme="a">More</li>
+							<li><a href="http://unionxtreme.com">UnionXtreme</a></li>
+							<li><a href="http://unionxtreme.com">More Apps</a></li>
+							<li><a href="http://millwrights1102.com">Hire Pro</a></li>
+							<li><a href="http://millwrightstraining.com">Training</a></li>
+						</ul>
+				</div>						
 
 			
         </div>
