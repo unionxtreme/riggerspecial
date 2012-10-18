@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Rigger</name>
+    <name>Rigger Special</name>
 
     <description>
-        An example for phonegap build docs. 
+        Rigger Special is a reference for rigging.  
     </description>
 
     <author href="https://unionxtreme.com" email="catalanopinto@gmail.com">
